@@ -1,0 +1,6 @@
+query/service/app/AppConfig.class
+query/service/service/TemplateService.class
+query/service/data/DataModel.class
+query/service/data/DataStore.class
+query/service/controller/TemplateController.class
+query/service/app/Application.class

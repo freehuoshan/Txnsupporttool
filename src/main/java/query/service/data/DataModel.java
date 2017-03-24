@@ -28,6 +28,10 @@ public class DataModel {
     private Boolean rejectFile;
     private Boolean isPriced;
 
+    public DataModel() {
+
+    }
+
     public DataModel(String invoiceId, String paymentType, String transactionType, Double transactionAmount,
                      Date transactionReceivedDate, String batchType, Boolean isBatchClosed, Date batchCloseDate,
                      String dispositionStatus, Boolean mlinkProcessed, String mlinkResponseCode, Date transactionDate,

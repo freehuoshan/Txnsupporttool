@@ -157,7 +157,7 @@ public class Dao {
 				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss:SSS a", new Locale("en", "US"));
 				
 				Map<String, Object> map = new HashMap<>();
-				map.put("mLinkReceivedDate", res.getString("GATEWAY_REQUEST_DATE"));
+				map.put("mLinkReceivedDate", res.getDate("GATEWAY_REQUEST_DATE"));
 				map.put("nrtConformedDate", format.format(insertDttm));
 				return map;
 			}

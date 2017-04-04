@@ -49,10 +49,10 @@ public class Service {
 		return existMap;
 	}
 
-	public List<IhubAuth> getDatasById(String invoiceid) {
+	public List<IhubAuth> getDataById(String invoiceid) {
 		String tableName = "IHUB_AUTH";
 		String fieldName = "INVOICE_NUMBER";
-		List<IhubAuth> dataMap = dao.getDatasById(tableName, fieldName, invoiceid);
+		List<IhubAuth> dataMap = dao.getDataById(tableName, fieldName, invoiceid);
 		
 		return dataMap;
 	}

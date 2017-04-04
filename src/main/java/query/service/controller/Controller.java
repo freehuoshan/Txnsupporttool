@@ -56,7 +56,7 @@ public class Controller {
 			 return ResponseEntity.badRequest().body("{ \"message\": \"Missing invoiceid value\"}"); 
 		}
 		Map<String, Boolean> exisMap = service.isExistId(invoiceid);
-		List<IhubAuth> dataMap =service.getDatasById(invoiceid);
+		List<IhubAuth> dataMap =service.getDataById(invoiceid);
 		List<Qbms> qbmsData = service.getQbmsData(invoiceid);
 		Map<String, Boolean> existMap = service.getExistMap(invoiceid);
 		List<Map<String, Object>> qbmsByClientMap = service.getQbmsByClientId(invoiceid);

@@ -48,7 +48,7 @@ public class Dao {
 		return queryResult.size() > 0 ? true : false;
 	}
 
-	public List<IhubAuth> getDatasById(String tableName , String fieldName , String fieldValue) {
+	public List<IhubAuth> getDataById(String tableName , String fieldName , String fieldValue) {
 		String sql = "select TXN_TYPE , AMOUNT , TXN_DATE , BATCH_CLOSE_DATE , CARD_TYPE ,"
 				+ "MT_MERCHANT_BATCH_ID,TXN_STATUS_ID,MT_RESULT_CODE"
 				+ " from " + tableName + " where " + fieldName + " = ?";

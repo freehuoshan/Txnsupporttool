@@ -59,7 +59,7 @@ public class Dao {
 			@Override
 			public Object mapRow(ResultSet res, int index) throws SQLException {
 				
-				Double batchType =  res.getDouble("MT_MERCHANT_BATCH_ID");
+				String batchType =  res.getString("MT_MERCHANT_BATCH_ID");
 				Double resultCode = res.getDouble("MT_RESULT_CODE");
 				Date batchCloseDate = res.getDate("BATCH_CLOSE_DATE");
 				
